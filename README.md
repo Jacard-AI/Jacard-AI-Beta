@@ -2,9 +2,9 @@
 
 Public issue tracker and feedback hub for [beta.jacard.ai](https://beta.jacard.ai).
 
-| Beta | Report | Issues | Labels | Project |
+| Beta | Report | Issues | Labels | Known issues |
 | --- | --- | --- | --- | --- |
-| [Open beta.jacard.ai](https://beta.jacard.ai) | [Open issue form](https://github.com/Jacard-AI/Jacard-AI-Beta/issues/new/choose) | [Browse issues](https://github.com/Jacard-AI/Jacard-AI-Beta/issues) | [View labels](https://github.com/Jacard-AI/Jacard-AI-Beta/labels) | [Jacard Beta Triage](https://github.com/orgs/Jacard-AI/projects) |
+| [Open beta.jacard.ai](https://beta.jacard.ai) | [Open issue form](https://github.com/Jacard-AI/Jacard-AI-Beta/issues/new/choose) | [Browse issues](https://github.com/Jacard-AI/Jacard-AI-Beta/issues) | [View labels](https://github.com/Jacard-AI/Jacard-AI-Beta/labels) | [Known Issues and Beta Notes](https://github.com/Jacard-AI/Jacard-AI-Beta/issues/1) |
 
 ![Jacard hero](docs/images/hero.png)
 
