@@ -1,0 +1,62 @@
+name: Product feedback
+description: Share what felt useful, magical, confusing, or gimmicky in the beta
+title: "[Feedback] "
+labels:
+  - type/feedback
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: Task you were trying to do
+      description: What real task brought you to Jacard?
+      placeholder: Compare options, learn a concept, plan a trip, browse ideas, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: useful
+    attributes:
+      label: What felt genuinely useful?
+      description: Call out the parts that improved the task, not just the output quality.
+    validations:
+      required: true
+  - type: textarea
+    id: magical
+    attributes:
+      label: What felt magical?
+      description: If something exceeded your expectations, describe that moment.
+    validations:
+      required: true
+  - type: textarea
+    id: gimmicky
+    attributes:
+      label: What felt gimmicky or confusing?
+      description: Include any part that looked impressive but did not help you finish the task.
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Main product area
+      options:
+        - landing
+        - examples
+        - chat
+        - research-process
+        - jacard-view
+        - jacard-pages
+        - share
+        - auth
+        - mobile
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or links
+      description: Add shared links, screenshots, or recordings if they help.
+      render: markdown
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: If you had to change one thing first, what would it be?

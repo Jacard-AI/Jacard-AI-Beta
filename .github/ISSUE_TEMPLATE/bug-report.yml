@@ -1,0 +1,116 @@
+name: Bug report
+description: Report a broken flow, regression, or incorrect behavior on beta.jacard.ai
+title: "[Bug] "
+labels:
+  - type/bug
+  - needs-repro
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Affected surface
+      description: Pick the area that best matches the problem.
+      options:
+        - landing
+        - examples
+        - chat
+        - research-process
+        - jacard-view
+        - jacard-pages
+        - share
+        - auth
+        - mobile
+    validations:
+      required: true
+  - type: input
+    id: page_url
+    attributes:
+      label: Page URL
+      description: Paste the exact beta URL where this happened.
+      placeholder: https://beta.jacard.ai/...
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt or task attempted
+      description: Paste the prompt, query, or task that triggered the issue.
+      placeholder: "Plan a four-day Washington, DC family trip during cherry blossom season..."
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: List the smallest reliable repro you have.
+      placeholder: |
+        1. Open ...
+        2. Enter ...
+        3. Click ...
+        4. Observe ...
+    validations:
+      required: true
+  - type: dropdown
+    id: auth_state
+    attributes:
+      label: Session type
+      description: Were you signed in when this happened?
+      options:
+        - Guest
+        - Signed in
+        - Unknown
+    validations:
+      required: true
+  - type: input
+    id: browser_device
+    attributes:
+      label: Browser and device
+      description: Include browser version and device or OS if known.
+      placeholder: Chrome 135 on macOS, Safari on iPhone 15 Pro, etc.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Blocks core task
+        - Major but workable
+        - Minor issue
+        - Cosmetic only
+    validations:
+      required: true
+  - type: checkboxes
+    id: regression
+    attributes:
+      label: Regression signal
+      options:
+        - label: This worked in an earlier beta build or earlier this week and now fails.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot, recording, or share link
+      description: Paste links and add any context needed to understand them.
+      placeholder: Shared conversation URL, shared Jacard View URL, image link, short recording link, etc.
+      render: markdown
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Optional console or network notes
+      description: Add any console errors, failed requests, or timestamps if you checked them.
+      render: shell

@@ -1,0 +1,68 @@
+name: Feature request
+description: Propose a new capability or improvement grounded in a real user job
+title: "[Feature] "
+labels:
+  - type/feature
+body:
+  - type: textarea
+    id: user_job
+    attributes:
+      label: User job
+      description: What are you trying to accomplish?
+      placeholder: "I want to compare multiple travel options quickly without reading a long answer."
+    validations:
+      required: true
+  - type: textarea
+    id: blocker
+    attributes:
+      label: Current blocker
+      description: What is missing or painful in the current beta?
+    validations:
+      required: true
+  - type: textarea
+    id: desired_behavior
+    attributes:
+      label: Desired behavior
+      description: Describe the feature from the user perspective.
+    validations:
+      required: true
+  - type: textarea
+    id: sample_prompt
+    attributes:
+      label: Sample prompt or task
+      description: Provide a concrete example the team can evaluate against.
+      render: markdown
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Requested priority
+      options:
+        - Critical to my workflow
+        - High value
+        - Nice to have
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Main product area
+      options:
+        - landing
+        - examples
+        - chat
+        - research-process
+        - jacard-view
+        - jacard-pages
+        - share
+        - auth
+        - mobile
+    validations:
+      required: true
+  - type: textarea
+    id: comparable
+    attributes:
+      label: Comparable product or pattern
+      description: Optional. Mention any existing product or interaction pattern worth referencing.
+      render: markdown
